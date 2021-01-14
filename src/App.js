@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Customer from './components/Customer';
 
@@ -36,6 +36,7 @@ function App() {
         customers.map( c => {
           return (
             <Customer 
+              key = {c.id}
               id={c.id}
               image={c.image}
               name={c.name}
